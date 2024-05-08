@@ -1,0 +1,27 @@
+.file-handler-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-handler-container h2 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.file-handler-container button {
+    background-color: #4e4e4e;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.file-handler-container button:hover {
+    background-color: #333333;
+}

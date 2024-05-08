@@ -1,0 +1,32 @@
+.tools-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+    background-color: #4e4e4e;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.tool {
+    margin-bottom: 10px;
+    /* Adjust spacing between icons and labels */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    /* Icon and label color */
+}
+
+.tool i {
+    margin-right: 5px;
+    /* Adjust spacing between icon and label */
+}
+
+.label {
+    font-size: 14px;
+    /* Adjust label font size */
+}

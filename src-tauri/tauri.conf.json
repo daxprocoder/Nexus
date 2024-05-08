@@ -32,7 +32,7 @@
       "active": true,
       "targets": "all",
       "identifier": "com.tauri.dev",
-      "icon":"./icons/pong2.png"
+      "icon":["./icons/pong2.png"]
     }
   }
 }
