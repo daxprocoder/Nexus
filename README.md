@@ -1,13 +1,13 @@
 # Nexus - AI Editor
 
-![Nexus Logo](nexus_logo.png)
+![Nexus Logo](https://github.com/daxprocoder/Nexus/blob/main/src/assets/icon.png)
 
 Welcome to Nexus, the AI-powered editor designed to streamline your writing experience with advanced features and intelligent assistance.
 
 ## Contributors
-- DaxProcoder
-- JimJam
-- RudyRDX
+- @daxprocoder
+- @jimjam
+- @rudyrdx
 
 ## About Nexus
 Nexus is a cutting-edge text editor leveraging artificial intelligence to provide intuitive writing suggestions, grammar checks, and content enhancements. Whether you're a seasoned writer or just starting out, Nexus is here to elevate your writing process.
