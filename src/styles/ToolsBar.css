@@ -1,15 +1,38 @@
 .tools-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     /* Stack items vertically */
     align-items: flex-start;
     /* Align items to the left */
-    background-color: #4e4e4e;
+    background-color: #111111;
     padding: 10px;
     z-index: 9999;
+    height: 91.5%;
+    width: 250px;
+    border-right: 1px solid #333333;
+    position: relative;
+
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+}
+
+.btns button{
+    background-color: #262626;
+    color: white;
+    border: 1px solid #333333;
+}
+
+.explorer{
+    display: flex;
+    gap: 10px;
+    color: white;
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 10px;
+    margin-block: 20px;
 }
 
 .tool {
@@ -18,6 +41,8 @@
     display: flex;
     align-items: center;
     color: #ffffff;
+    padding: 10px;
+    margin-left: 20px;
     /* Icon and label color */
 }
 

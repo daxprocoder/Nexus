@@ -12,6 +12,17 @@ const handleToolClick = (toolName) => {
 function Toolbar() {
     return (
         <div className="tools-bar">
+            <div className="btns">
+                <button className='createfile'>
+                    <span>&#x2B; </span>
+                    Create new file
+                    </button>
+                <button className='search'>i</button>
+            </div>
+            <div className="explorer">
+                <span>Explorer</span>
+                <span>-</span>
+            </div>
             <div className="tool" onClick={() => handleToolClick('Files')}>
                 <i className="fas fa-file"></i>
                 <span className="label">Files</span>

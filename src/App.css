@@ -5,3 +5,8 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafb);
 }
+
+.App{
+  background-color: #252525;
+  height: 100vh;
+}

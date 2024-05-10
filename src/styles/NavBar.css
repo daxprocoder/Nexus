@@ -1,0 +1,16 @@
+.navul{
+    list-style: none;
+    text-decoration: none;
+    background-color: #111111;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #333333;
+}
+
+.navul li{
+    padding: 10px;
+}
+
+.navul a{
+    color: white;
+}

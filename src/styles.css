@@ -1,3 +1,9 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -5,7 +11,7 @@
   font-weight: 400;
 
   color: #0f0f0f;
-  background-color: #f6f6f6;
+  background-color: #252525;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,6 +19,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 
 .container {
   margin: 0;
@@ -89,7 +96,7 @@ button {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     color: #f6f6f6;
     background-color: #2f2f2f;
   }
@@ -105,5 +112,5 @@ button {
   }
   button:active {
     background-color: #0f0f0f69;
-  }
+  } */
 }
