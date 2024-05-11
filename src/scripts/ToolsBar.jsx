@@ -25,7 +25,7 @@ function Toolbar() {
                 <label htmlFor="file-input">
                     <img src={folder_icon} alt="Upload File" />
                 </label>
-                <input id="file-input" type="file" style={{ display: 'none' }} />
+                <input id="file-input" type="file" style={{ display: 'none' }} webkitdirectory="" directory=""/>
             </div>
         </div>
     );
