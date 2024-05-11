@@ -22,7 +22,10 @@ function Toolbar() {
                 <img src={search_icon} width="64" height="64" alt="Search" onClick={() => handleToolClick('Search')} />
             </div>
             <div>
-                <img src={folder_icon} alt="JavaScript" onClick={() => handleToolClick('JavaScript')} />
+                <label htmlFor="file-input">
+                    <img src={folder_icon} alt="Upload File" />
+                </label>
+                <input id="file-input" type="file" style={{ display: 'none' }} />
             </div>
         </div>
     );
