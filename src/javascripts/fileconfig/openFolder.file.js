@@ -1,20 +1,11 @@
 import os from 'os'
 import fs from 'fs'
 
-function OpenFodler(){
-
-
-    const localPath = '../test/' + 'test.txt'
-    return localPath
-
-
-}
-
 
 function OpenFiles(){
     //user which open only selected files.
     
-    const filesNames = ['../test/test.txt','../test/test2.txt']
+    const filesNames = []
     
     filesNames.forEach(fileName =>{
         fs.readFile(fileName,'utf8',(err,data)=>{
@@ -31,4 +22,3 @@ function OpenFiles(){
 
 
 export {OpenFiles}
-export{OpenFodler}
