@@ -1,7 +1,10 @@
 import React from 'react';
 import '../styles/ToolsBar.css'; // Assuming you have a separate CSS file for styling
-
+import createfile_icon from '../assets/createfile_icon.svg'; // Assuming you have an image for the create file tool
+import search_icon from '../assets/search_icon.png'; // Assuming you have an image for the create file tool
+import folder_icon from '../assets/folder_icon.svg'; // Assuming you have an image for the create file tool
 import '@fortawesome/fontawesome-free/css/all.css';
+import a from '../assets/a.svg';
 
 const handleToolClick = (toolName) => {
     // Implement the functionality for each tool click here
@@ -12,32 +15,14 @@ const handleToolClick = (toolName) => {
 function Toolbar() {
     return (
         <div className="tools-bar">
-            <div className="btns">
-                <button className='createfile'>
-                    <span>&#x2B; </span>
-                    Create new file
-                    </button>
-                <button className='search'>i</button>
+            <div>
+                <img src={createfile_icon} alt="Create File" onClick={() => handleToolClick('Create File')} />
             </div>
-            <div className="explorer">
-                <span>Explorer</span>
-                <span>-</span>
+            <div className='searchicon'>
+                <img src={search_icon} width="64" height="64" alt="Search" onClick={() => handleToolClick('Search')} />
             </div>
-            <div className="tool" onClick={() => handleToolClick('Files')}>
-                <i className="fas fa-file"></i>
-                <span className="label">Files</span>
-            </div>
-            <div className="tool" onClick={() => handleToolClick('Search')}>
-                <i className="fas fa-search"></i>
-                <span className="label">Search</span>
-            </div>
-            <div className="tool" onClick={() => handleToolClick('Profile')}>
-                <i className="fas fa-user"></i>
-                <span className="label">Profile</span>
-            </div>
-            <div className="tool" onClick={() => handleToolClick('Settings')}>
-                <i className="fas fa-cog"></i>
-                <span className="label">Settings</span>
+            <div>
+                <img src={folder_icon} alt="JavaScript" onClick={() => handleToolClick('JavaScript')} />
             </div>
         </div>
     );

@@ -1,14 +1,25 @@
 .navul{
     list-style: none;
     text-decoration: none;
-    background-color: #111111;
+    background-color: rgba(40, 40, 40, 1);
     display: flex;
     gap: 10px;
     border-bottom: 1px solid #333333;
+    width: 100vw;
+    padding-left: 0px;
 }
 
 .navul li{
     padding: 10px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid rgba(0, 194, 255, 1);
+    box-shadow: -6px 0px 7px 0px rgba(0, 255, 213, 1);
 }
 
 .navul a{

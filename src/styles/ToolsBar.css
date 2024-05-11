@@ -1,17 +1,22 @@
 .tools-bar {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     /* Stack items vertically */
-    align-items: flex-start;
     /* Align items to the left */
-    background-color: #111111;
+    /* background-color: #111111; */
+    background-color: rgba(40, 40, 40, 1);
     padding: 10px;
     z-index: 9999;
-    height: 91.5%;
-    width: 250px;
+    height: 100%;
+    width: 62px;
     border-right: 1px solid #333333;
     position: relative;
+}
 
+.tools-bar img:hover {
+   cursor: pointer;
 }
 
 .btns{
