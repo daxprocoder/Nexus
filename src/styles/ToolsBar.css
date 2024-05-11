@@ -60,3 +60,56 @@
     font-size: 14px;
     /* Adjust label font size */
 }
+
+/* ToolsBar.css */
+
+#search-dialog {
+    width: 500px;
+    /* height: 200px; */
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    /* display: flex; */
+    /* justify-content: center; */
+    transform: translate(100%, 50%);
+    /* backdrop-filter: brightness(0.5); */
+}
+
+#search-dialog button {
+    padding: 8px 16px;
+    background-color:  rgba(0, 194, 255, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 71px;
+}
+
+#search-dialog button:hover {
+    filter: brightness(0.9);
+}
+
+#search-dialog input {
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 2.5em;
+}
+
+dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.searchinput{
+    border: none !important;
+    outline: none;
+}
+
+.searchinput:focus{
+    box-shadow: 0px 0px 10px rgba(0, 255, 213, 1);
+    outline: 1px solid rgba(0, 255, 213, 1) !important;
+}

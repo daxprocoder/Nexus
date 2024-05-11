@@ -13,22 +13,38 @@ const handleToolClick = (toolName) => {
 };
 
 function Toolbar() {
+    const handleSearchIconClick = () => {
+        const dialog = document.getElementById("search-dialog");
+        dialog.showModal();
+    };
+
     return (
         <div className="tools-bar">
-            <div>
+            <div title='Create new file'>
                 <img src={createfile_icon} alt="Create File" onClick={() => handleToolClick('Create File')} />
             </div>
-            <div className='searchicon'>
-                <img src={search_icon} width="64" height="64" alt="Search" onClick={() => handleToolClick('Search')} />
+            <div className='searchicon' title='Search' onClick={handleSearchIconClick}>
+                <img src={search_icon} width="64" height="64" alt="Search" />
             </div>
-            <div>
-                <label htmlFor="file-input">
-                    <img src={folder_icon} alt="Upload File" />
+            <div title='Open Folder'>
+                <label htmlFor="folder-input">
+                    <img src={folder_icon} alt="Select Folder" />
                 </label>
-                <input id="file-input" type="file" style={{ display: 'none' }} webkitdirectory="" directory=""/>
+                <input id="folder-input" type="file" style={{ display: 'none' }} webkitdirectory="" directory="" />
             </div>
+            <dialog id="search-dialog">
+                <div className='maindialog' style={{ width: "100%",display:"flex",justifyContent:"center",alignItems:"flex-start",gap:"10px"}}>
+                    <input className='searchinput' type="text" title='Enter the file to be searched' />
+                    <button title='Close search' onClick={() => {
+                        document.getElementById("search-dialog").close()
+                        console.log('Search dialog closed')
+                    }}>Close
+                    </button>
+                </div>
+            </dialog>
         </div>
     );
 }
 
 export { Toolbar };
+

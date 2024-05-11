@@ -25,3 +25,7 @@
 .navul a{
     color: white;
 }
+
+.crossclose:hover{
+    background-color:grey;
+}
