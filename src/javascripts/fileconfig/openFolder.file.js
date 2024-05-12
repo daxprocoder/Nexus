@@ -18,7 +18,7 @@ function OpenFiles(){
     })
 }
 
-// OpenFiles()
+OpenFiles()
 
 
 export {OpenFiles}
